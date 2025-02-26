@@ -671,18 +671,19 @@ footer a, footer p{
 
 
     #intro{
-        max-height: 550px;
+        max-height: 650px;
     }
 
     #intro p{
-        max-width: 45%;
+        max-width: 40%;
     }
     
     #img-grid{
         max-width: 50%;
         position: relative;
         top: -275px;
-        left: 300px;
+        left: 20%;
+        padding: 50px;
 
     }
     
@@ -768,13 +769,17 @@ footer a, footer p{
     }
     
     #menu-toggle input:checked ~ ul, #menu-toggle input:not(checked) ~ ul{
+        position: relative;
+        top: -190px;
+        left: -40px;
+        float: right;
+        
         display: grid;
         margin: 0px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 10px;
-        position: absolute;
-        top: 0;
-        left: 580px;
+
+
     }
 
     #menu-toggle ul li{
