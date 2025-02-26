@@ -93,10 +93,9 @@ h4, p, q, small, nav, button, form{
 }
 
 #menu-toggle label{
-    display: block;
-    position: absolute;
-    left: 130px;
-    top: 20px;
+    position: relative;
+    top: -180px;
+    float: right;
     text-transform: uppercase;
     font-weight: bold;;
     background-color: var(--yellow);
@@ -133,9 +132,9 @@ h4, p, q, small, nav, button, form{
 #menu-toggle input:checked +  label{
     background-color: var(--dark-gray);
     color: white;
-    top: 0;
+    top: -208px;
     left: 0;
-    width: 320px;
+    width: 100%;
     text-align: center;
     padding: 10px 0 10px 0;
     
@@ -146,7 +145,7 @@ h4, p, q, small, nav, button, form{
     display: block;
     position: absolute;
     top: 35px;
-    width: 320px;
+    width: 100%;
 
 }
 #menu-toggle input:not(checked) ~ ul {
@@ -195,14 +194,16 @@ h2, h3{
 }
 
 #img-grid{
+    margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
 }
 
-#img-grid img, #img-grid picture{
-    max-width: 320px;
+#img-grid img, #img-grid picture, #img-grid picture img{
+    max-width: 100%;
     padding: 5px 0 5px 0;
+    margin: auto;
 }
 
 #plan{
@@ -335,8 +336,10 @@ form{
 }
 
 #names label{
+    display: flex;
     position: relative;
-    left: -80px;
+    left: 30px;
+    margin: auto;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -350,7 +353,7 @@ form{
 input[type=text], input[type=email], input[type=tel], input[type=submit]{
     display: flex;
     flex-direction: column;
-    width: 245px;
+    width: 80%;
     margin: 0px auto 15px auto;
     padding: 12px 10px 12px 10px;
     border: 3px solid var(--purple);
@@ -399,7 +402,7 @@ input[type=text], input[type=email], input[type=tel], input[type=submit]{
 .custom-select select{
     display: flex;
     flex-direction: column;
-    width: 270px;
+    width: 80%;
     margin: 0px auto 15px auto;
     background-color: var(--white);
     padding: 12px 20px 12px 20px;
@@ -668,7 +671,7 @@ footer a, footer p{
 
 
     #intro{
-        max-height: 450px;
+        max-height: 550px;
     }
 
     #intro p{
@@ -679,9 +682,12 @@ footer a, footer p{
         max-width: 50%;
         position: relative;
         top: -275px;
-        left: 550px;
+        left: 300px;
+
     }
     
+    
+
     #plan div{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 10px;
